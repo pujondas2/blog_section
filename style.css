@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Blog */
+.blog-area {
+    padding: 80px 0;
+}
+
+.blog-area-title {
+    text-align: center;
+    color: #30383B;
+}
+
+.blog-area-title h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.blog-area-title p {
+    width: 55%;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #777777;
+    font-size: 14px;
+}
+
+.blog {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-blog {
+    flex: 0 0 30%;
+    border: 3px solid #e3e6ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.blog-img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.blog-img img {
+    width: 100%;
+}
+
+.blog-info {
+    margin-bottom: 25px;
+}
+
+.blog-info p {
+    color: #888888;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.blog-info p a {
+    color: #888888;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.blog-info a:hover,
+.blog-text h4 a:hover {
+    color: #F81C1C;
+}
+
+.blog-info span {
+    margin: 0 10px;
+}
+
+.blog-text {
+    margin-bottom: 30px;
+}
+
+.blog-text h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.blog-text h4 a {
+    color: #30383B;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.blog-text p {
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.8;
+}
+
+.blog-btn {
+    margin-bottom: 15px;
+}
+
+.blog-btn a {
+    font-size: 14px;
+    background-color: #30383B;
+    color: #fff;
+    padding: 12px 35px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.blog-btn a:hover {
+    background-color: #F81C1C;
+}
+
+
+/* Responsive */
+@media (max-width: 991px) {
+    .single-blog {
+        flex: 0 0 45%;
+    }
+
+    .blog-area-title p {
+        width: 70%;
+    }
+}
+
+@media (max-width: 490px) {
+    .single-blog {
+        flex: 0 0 100%;
+    }
+
+    .blog-area-title p {
+        width: 100%;
+    }
+}
